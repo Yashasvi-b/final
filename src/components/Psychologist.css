@@ -1,0 +1,125 @@
+/* General Reset */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b3c0f0;
+} */
+
+/* Container for the psychologist section */
+.psychologist-page {
+    padding: 20px;
+    background-color: #a6d4ba;
+    text-align: center;
+    min-height: 100vh;
+    color: white;
+}
+
+/* h1 {
+    font-size: 2rem;
+    color: #008C8C;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 60px;
+} */
+
+/* Card Styling */
+.psychologist-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.psychologist-card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.psychologist-card:hover {
+    transform: scale(1.05);
+}
+
+.psychologist-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.psychologist-details {
+    margin-top: 15px;
+}
+
+.psychologist-details h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.psychologist-details p {
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+svg {
+    width: 35px;
+}
+
+.profile-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.selected-psychologist {
+    margin-top: 30px;
+    background-color: #4a90e2; /* New color for selected card */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white; /* Text color changes to white to contrast with the background */
+    text-align: left;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px; /* Rounded corners for the selected card */
+}
+
+.selected-psychologist h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff; /* Ensures header text is white */
+}
+
+.selected-psychologist p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #f5f5f5; /* Lightened text for contrast */
+}
+
+.profile-link {
+    color: #ffcc00; /* Yellow link color for contrast */
+}
+
+.profile-link:hover {
+    text-decoration: underline;
+    color: #ffaa00; /* Change to a darker shade on hover */
+}
+
+
+
+
+
+
+

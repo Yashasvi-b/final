@@ -1,0 +1,119 @@
+
+.journal-page {
+  margin-top: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #373c4f;
+}
+
+.journal-container {
+  width: 70%;
+  max-width: 800px;
+  background-color: #ffffff; /* White box */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  
+  font-weight: bold;
+}
+
+.journal-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.journal-button {
+  margin: 0 10px;
+}
+
+.journal-textfield {
+  margin-bottom: 20px;
+}
+
+.save-button {
+  display: block;
+  margin: 0 auto 20px auto;
+  background-color: #4caf50;
+  color: white;
+          
+  justify-content: center;   
+  align-items: center;
+}
+
+/* .drawer-toggle {
+  font-size: 16px;         
+  font-weight: bold;
+  position: fixed;
+  text-align: center;        
+  display: flex;             
+  justify-content: center;   
+  align-items: center;  
+  width: 20px;
+ 
+  height: 500px;   
+  left: 0;
+  top: 50%;
+
+  transform: translateY(-50%);
+  cursor: pointer;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+} */
+
+.drawer-toggle {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100px;               /* Adjusted height for better visibility */
+  width: 50px;                 /* Fixed width for a sleek look */
+  background-color: #9c27b0;   /* Purple background */
+  color: white;                /* White text */
+  border: none;                /* No border */
+  border-radius: 0 5px 5px 0;  /* Rounded corners on the right side */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  font-size: 14px;             /* Adjusted font size for readability */
+  font-weight: bold;           /* Bold text */
+  writing-mode: vertical-rl;   /* Vertical text rotation */
+  text-orientation: upright;   /* Ensure text remains upright */
+  text-align: center;          /* Center-align text */
+  display: flex;               /* Use flexbox for alignment */
+  justify-content: center;     /* Center text horizontally */
+  align-items: center;         /* Center text vertically */
+  cursor: pointer;             /* Pointer cursor on hover */
+  transition: all 0.3s ease;   /* Smooth hover transition */
+}
+
+.drawer-toggle:hover {
+  background-color: #7b1fa2;   /* Darker purple on hover */
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.drawer-toggle::after {
+  content: "»";                /* Add a chevron/arrow symbol */
+  font-size: 20px;             /* Larger arrow for better visibility */
+  position: absolute;
+  bottom: 10px;                /* Position arrow at the bottom */
+  color: white;                /* Arrow matches the text color */
+}
+
+
+
+.entry-card {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.drawer-toggle button:hover {
+  background-color: #7b1fa2; /* Darker purple on hover */
+}

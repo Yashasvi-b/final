@@ -1,0 +1,126 @@
+/* Gradient background for the wrapper div */
+.page-background {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #a2531a, #ffd9c0); /* Brown to White */
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't affect height */
+}
+
+/* Chatbot container stays white */
+.chatbot-container {
+    margin-top: 4%;
+    width: 85%;
+    max-width: 85%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    height:620px;
+}
+
+
+
+.chatbot-title {
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.chatbox {
+    height: 460px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.message-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.message-container.user {
+    justify-content: flex-end;
+}
+
+.message-container.bot {
+    justify-content: flex-start;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.message {
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 60%;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+.message-container.user .message {
+    background-color: #d1e7dd;
+    color: #0a3622;
+    text-align: left;
+}
+
+.message-container.bot .message {
+    background-color: #f8d7da;
+    color: #58151c;
+    text-align: left;
+}
+
+.input-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+.send-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.send-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.message.typing span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 2px;
+    animation: typing 1s infinite;
+}
+
+@keyframes typing {
+    0%, 100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+}
